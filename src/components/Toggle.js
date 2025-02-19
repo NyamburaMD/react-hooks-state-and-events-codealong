@@ -9,7 +9,11 @@ function Toggle() {
 
   const color = isOn ? "red" : "white" //conditional rendering for whether the button comes out red or white
 
-  return <button onClick={handleClick}>{isOn ? "ON" : "OFF"}</button>; //Conditional rendering
+  return (
+  <button style={{background: color}} onClick={handleClick}>
+    {isOn ? "ON" : "OFF"}
+    </button> //conditional rendering
+    );
 }
 
 export default Toggle;
