@@ -1,7 +1,10 @@
 import React from "react";
 
 function Toggle() {
-  return <button>OFF</button>;
+  function handleClick() {
+    console.log("On");
+  }
+  return <button onClick={handleClick}>OFF</button>;
 }
 
 export default Toggle;
